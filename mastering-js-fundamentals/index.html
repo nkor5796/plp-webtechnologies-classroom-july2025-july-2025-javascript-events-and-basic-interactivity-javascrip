@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Interactive Profile</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>👋 Hi!!! my name is Nkor Martine</h1>
+    <button id="modeToggle">🌙 Dark Mode</button>
+  </header>
+    <h1> Welcome to My Interactive Page</h1>
+    <button id="modeToggle">🌙 Dark Mode</button>
+  </header>
+
+  <!-- Part 1: Event Handling -->
+  <section>
+    <h2>🎯 Interactive Greeting</h2>
+    <button id="welcomeBtn">Say Hello</button>
+    <p id="welcomeMessage"></p>
+
+    <input type="text" id="liveInput" placeholder="Type your nickname...">
+    <p id="liveOutput"></p>
+  </section>
+
+  <!-- Part 2: Interactive Elements -->
+  <section>
+    <h2>🎮 Fun Counter Game</h2>
+    <button id="counterBtn">Click Me!</button>
+    <p>You have clicked <span id="counterValue">0</span> times 🎉</p>
+  </section>
+
+  <section>
+    <h2>❓ Quick FAQ</h2>
+    <div class="faq">
+      <h3 class="faq-question">What is this page?</h3>
+      <p class="faq-answer">This is a creative JavaScript assignment showing interactivity.</p>
+    </div>
+    <div class="faq">
+      <h3 class="faq-question">Why JavaScript?</h3>
+      <p class="faq-answer">Because it makes websites alive and fun to use 🚀.</p>
+    </div>
+  </section>
+
+  <!-- Part 3: Form Validation -->
+  <section>
+    <h2>📋 Register Below</h2>
+    <form id="registerForm">
+      <label>Name:</label>
+      <input type="text" id="name" required>
+      <small class="error" id="nameError"></small>
+
+      <label>Email:</label>
+      <input type="email" id="email" required>
+      <small class="error" id="emailError"></small>
+
+      <label>Password:</label>
+      <input type="password" id="password" required>
+      <small class="error" id="passwordError"></small>
+
+      <button type="submit">Submit</button>
+      <p id="successMessage"></p>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
